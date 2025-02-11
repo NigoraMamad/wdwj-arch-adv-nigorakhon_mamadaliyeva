@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f0e3; /* Light background */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+           max-width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff; /* White header */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-links a:hover {
+            color: #777;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .auth-buttons a {
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .auth-buttons a.sign-in {
+            border: 1px solid #ccc;
+            color: #555;
+        }
+
+        .auth-buttons a.register {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .main-content {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product {
+            width: 250px;
+            margin: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product .rose a {
+            text-decoration: none;
+        }
+
+        .product h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+
+        .product p {
+            color: #666;
+        }
+        .back-to-home {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-to-home a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-to-home a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Flower shop</div>
+        <div class="nav-links">
+            <a href="index.html">Products</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="login.html" class="sign-in">Sign In</a>
+            <a href="register.html" class="register">Register</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="product" class="rose">
+            <a href="rose.html">
+                <img src="images/100-red-roses.jpg" alt="Red Rose">
+                <h3>Red Rose</h3>
+                <p>A classic symbol of love and passion.</p>
+            </a>
+        </div>
+        <div class="product">
+            <img src="images/img-9.jpg" alt="Tulip">
+            <h3>Tulip</h3>
+            <p>Known for their vibrant colors and simple elegance.</p>
+        </div>
+        <div class="product">
+            <img src="images/mazzo_girasoli.jpg" alt="Sunflower">
+            <h3>Sunflower</h3>
+            <p>Symbolizes adoration and longevity.</p>
+        </div>
+        <div class="product">
+            <img src="images/lily.webp" alt="Lily">
+            <h3>Lily</h3>
+            <p>Represents purity and refined beauty.</p>
+        </div>
+    </div>
+    <div class="back-to-home">
+        <a href="index.html">Back to Home</a>
+    </div>
+</body>
+</html>
